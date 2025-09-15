@@ -25,7 +25,7 @@ export function Dock() {
       href: "#projects",
     },
     {
-      title: "Github",
+      title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
@@ -48,7 +48,7 @@ export function Dock() {
   ];
   return (
     <div className="fixed right-5 bottom-5 z-50 md:right-0 md:bottom-10 md:left-0 md:flex md:justify-center">
-      <FloatingDock items={links} />
+      <FloatingDock items={links} desktopClassName="dark" />
     </div>
   );
 }

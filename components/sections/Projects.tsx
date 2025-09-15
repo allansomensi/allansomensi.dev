@@ -10,7 +10,7 @@ const AnimatedProjects = dynamic(
   { ssr: false },
 );
 
-export function MainProjects() {
+export function Projects() {
   const projects = [
     {
       title: "Inkcheck",
@@ -59,7 +59,7 @@ export function MainProjects() {
   ];
   return (
     <div
-      id="main-projects"
+      id="projects"
       className="w-full bg-gradient-to-t from-neutral-950 via-neutral-900 to-neutral-950 py-20"
     >
       <div className="container mx-auto max-w-4xl px-4">

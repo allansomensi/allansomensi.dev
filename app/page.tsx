@@ -1,11 +1,11 @@
 import { Hero } from "@/components/sections/Hero";
-import { MainProjects } from "@/components/sections/MainProjects";
+import { Projects } from "@/components/sections/Projects";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <MainProjects />
+      <Projects />
     </main>
   );
 }
