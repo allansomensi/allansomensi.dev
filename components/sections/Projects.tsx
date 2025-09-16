@@ -41,7 +41,7 @@ export function Projects() {
     },
     {
       text: "ideas",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
     {
       text: "to",
@@ -54,7 +54,7 @@ export function Projects() {
     },
     {
       text: "Code",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
   ];
   return (
