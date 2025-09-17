@@ -1,7 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
-import { TypewriterEffect } from "../ui/Typewriter";
 import { ProjectsGrid } from "../ui/ProjectsGrid";
+import { LayoutTextFlip } from "../ui/LayoutTextFlip";
+import { motion } from "motion/react";
 
 const AnimatedProjects = dynamic(
   () =>
@@ -36,37 +37,25 @@ export function Projects() {
     },
   ];
 
-  const words = [
-    {
-      text: "Bringing",
-    },
-    {
-      text: "ideas",
-      className: "text-blue-500",
-    },
-    {
-      text: "to",
-    },
-    {
-      text: "life",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Code",
-      className: "text-blue-500",
-    },
-  ];
   return (
     <div
       id="projects"
       className="w-full bg-gradient-to-t from-neutral-950 via-neutral-900 to-neutral-950 py-20"
     >
       <div className="container mx-auto max-w-4xl px-4">
-        <h2 className="mb-12 text-center text-4xl leading-tight font-bold text-white md:text-5xl md:leading-tight">
-          <TypewriterEffect words={words} />
-        </h2>
+        <div>
+          <motion.div className="relative mx-4 my-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-0 sm:mb-0 sm:flex-row">
+            <LayoutTextFlip
+              text="Building Better"
+              words={["Software", "Systems", "Solutions"]}
+            />
+          </motion.div>
+          <p className="mt-4 text-center text-base text-neutral-600 dark:text-neutral-400">
+            A showcase of my open-source projects grounded in the principles of
+            modern, scalable, and semantic software development for robust and
+            maintainable results.
+          </p>
+        </div>
         <AnimatedProjects projects={projects} autoplay />
       </div>
       <ProjectsGrid />
