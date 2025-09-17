@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import { TypewriterEffect } from "../ui/Typewriter";
+import { ProjectsGrid } from "../ui/ProjectsGrid";
 
 const AnimatedProjects = dynamic(
   () =>
@@ -68,6 +69,7 @@ export function Projects() {
         </h2>
         <AnimatedProjects projects={projects} autoplay />
       </div>
+      <ProjectsGrid />
     </div>
   );
 }
