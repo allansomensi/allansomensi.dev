@@ -50,7 +50,7 @@ export function Projects() {
               words={["Software", "Systems", "Solutions"]}
             />
           </motion.div>
-          <p className="mt-4 text-center text-base text-neutral-600 dark:text-neutral-400">
+          <p className="mt-4 text-center text-base text-neutral-400">
             A showcase of my open-source projects grounded in the principles of
             modern, scalable, and semantic software development for robust and
             maintainable results.
